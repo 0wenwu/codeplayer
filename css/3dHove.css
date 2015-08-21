@@ -1,0 +1,6 @@
+*{margin: 0;padding:0;}
+body,html{min-height: 100%}
+
+body{background: #544;background: linear-gradient:(#544,#565);}
+
+#wrapper a{}

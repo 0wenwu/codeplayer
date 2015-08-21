@@ -1,0 +1,39 @@
+/*@import url('http://fonts.googleapis.com/css?family=Montserrat');*/
+/****************************************ripple******************************************/
+/*basic reset*/
+*{margin: 0;padding: 0;}
+html{height: 100%}
+body{background: #333;height: 100%}
+ul{
+	border-top: 6px solid hsl(180, 40%, 60%);
+	display: block;width: 200px;height: 100%;
+	box-sizing:border-box;
+}
+ul li{list-style-type: none;overflow: hidden;position: relative;}
+ul li a{
+	cursor: pointer;font: bold 14px/24px Microsoft YaHei;color:hsl(180, 40%, 60%) ;
+	text-decoration: none;padding: 10px 15px;display: block;position: relative;
+	user-select:none;-webkit-user-select:none;-moz-user-select:none;
+}
+
+/*class selection*/
+.nav{
+	width: 200px;
+	height: 100%;
+	background: white;
+	min-height: 268px;
+}
+
+.ink{
+	position: absolute;	display: block;
+	background: hsl(180, 40%, 80%);	
+	border-radius: 100%;
+	transform:scale(0);
+}
+
+.animate{-webkit-animation:ripple 0.65s linear;}
+
+@-webkit-keyframes ripple{	
+	100%{opacity:0;transform:scale(2.5);}
+}
+

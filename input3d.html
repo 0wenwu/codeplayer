@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Input3D</title>
+	<link rel="stylesheet" type="text/css" href="common/FontAwesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/input3d.css">
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="js/input3d.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<form>
+			<!-- tip text -->
+			<div class="form-text">Input</div>
+			<!-- text input -->
+			<div class="form-text">
+				<label for="submit" class="submit-icon">
+					<i class="fa fa-chevron-right"></i>
+				</label>
+				<input type="text" id="email" placeholder="your email" autocomplete="off">
+				<!-- hidden submit -->
+				<input type="submit" id="submit">
+			</div>
+			<!-- load message -->
+			<div class="form-text">Loading</div>
+			<!-- success message -->
+			<div class="form-text">
+				Success
+				<span class="reset-icon"><i class="fa fa-refresh"></i></span>
+			</div>
+			
+		</form>
+	</div>
+</body>
+</html>

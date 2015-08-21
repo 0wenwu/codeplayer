@@ -1,0 +1,16 @@
+*{margin: 0;padding: 0;}
+
+.grid{width: 600px;margin: 100px auto;text-align: center;}
+
+#gallery{height: 350px;perspective:500px;}
+
+#gallery > div{width: 60px;height: 60px;display: block;float: left;}
+
+.button{
+	padding: 10px 20px;background: rgb(0,100,0);
+	color: white;font:bold 18px MicroSoft YaHei;
+	border-radius: 5px;cursor: pointer;
+	user-select:none;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;
+}
+
+.button:hover{background: rgb(0,75,0);};

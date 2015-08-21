@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		#wrapper{perspective:1000px;transform:translateZ(-20px);}
+		#wrapper div{margin-right: 20px;}
+		#one{
+			width:100px;height:30px;transform:rotateX(50deg);transition:all 0.35s;
+			background: red;float: left;
+		}
+		#two{
+			width:100px;height:30px;transform:rotateX(60deg);transition:all 0.35s;
+			background: yellow;float: right;
+		}
+		#three{
+			width:100px;height:30px;transform:rotateX(-50deg);transition:all 0.35s;
+			background: yellow;float: left;
+		}
+		#four{
+			clear:both;
+			width: 100px;
+			transform:translateZ(-20px);
+		}
+		#sub-one{
+			width:100px;height:30px;transform:rotateX(50deg);transition:all 0.35s;
+			background: red;
+		}
+		#sub-two{
+			width:100px;height:30px;transform:rotateX(60deg);transition:all 0.35s;
+			background: yellow;
+		}
+		#sub-three{
+			width:100px;height:30px;transform:rotateX(-50deg);transition:all 0.35s;
+			background: blue;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="one"></div>
+		<div id="two"></div>
+		<div id="three"></div>
+		<div id="four">
+			<div id="sub-one"></div>
+			<div id="sub-two"></div>
+			<div id="sub-three"></div>
+		</div>
+	</div>	
+</body>
+</html>
